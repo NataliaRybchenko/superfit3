@@ -1,0 +1,82 @@
+@import '../mainStyle.scss';
+
+.TimetableCard {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    padding: 12px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; //чтобы брал паддинг от ширины, а не доп
+    &__Time {
+        display: flex;
+        justify-content: space-between; // центрирование по расстоянию между элементами
+        margin-bottom: 0.7%;
+
+        span {
+            font-size: 17px;
+            font-weight: 500; // жирность
+        }
+
+    }
+    &__Title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    &__Description {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    &__Instructor {
+        width: 100%;
+        display: inline;
+
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 2%;
+        p {
+            display: inline;
+            font-weight: 400;
+            padding-left: 7px;
+
+
+        }
+        // ul{
+        //     list-style: none;
+        //     padding: 0;
+        //     li{
+        //         display: flex;
+        //         margin-bottom: 10px;
+
+        //     }
+        // }
+        // &__Info{
+        //     display: flex;
+        //     margin-left: 10px;
+        //     justify-content: space-around;
+        //     flex-direction: column;
+        //     &__Name{
+        //         font-weight: 500;
+        //     }
+        //     &__Career{
+        //         font-weight: 400;
+        //     }
+        // }
+    }
+    &__ButtonSingUp {
+        margin: 0 auto;
+        background-color: $colorMainGreen;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 7px 30px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+}

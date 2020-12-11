@@ -1,0 +1,13 @@
+@import '../mainStyle.scss';
+
+.Logo {
+    width: 100%;
+    color: $colorMainGreen;
+    font-size: 45px;
+    margin: 20px 40px;
+    flex-grow: 1;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+}
